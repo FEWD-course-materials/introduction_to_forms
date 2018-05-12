@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+
+    <body>
+        <form>
+            <fieldset>
+                <legend>Your Contact Info</legend>
+                <div>
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" placeholder="Name" name="name">
+                </div>
+                <div>
+                    <label for="number">Phone number</label>
+                    <input type="tel" id="number" placeholder="Phone number" name="phone-number">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Course</legend>
+                <div>
+                    <label>Course</label>
+                    <select name="course">
+                        <option value="front-end">Front-end</option>
+                        <option value="back-end">Back-end</option>
+                        <option value="visual-design">Visual Design</option>
+                        <option value="user-experience">User Experience</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Experience</label>
+                    <br>
+                    <input type="radio" name="experience" value="no experience"> No experience<br>
+                    <input type="radio" name="experience" value="beginner"> Beginner<br>
+                    <input type="radio" name="experience" value="intermediate"> Intermediate<br>
+                    <input type="radio" name="experience" value="advanced"> Advanced<br>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Anything Else?</legend>
+                
+                <div>
+                    <label>How did you hear about us?</label>
+                    <br>
+                    <input type="checkbox" name="referral" value="none"> None<br>
+                    <input type="checkbox" name="referral" value="friend"> Friend<br>
+                    <input type="checkbox" name="referral" value="instructor"> Instructor<br>
+                    <input type="checkbox" name="referral" value="online"> Online<br>
+                </div>
+                
+                <div>
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments" rows="5" cols="60"></textarea>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+        
+        <script
+          src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
+
+<!-- Phone Number -->
+<!-- Course: Dropdown list [Front-end, Back-end, User Experience, Digital Marketing] -->
+<!-- Experience Level: List of options, but you can only pick one [Beginner, Intermediate, Advanced] -->
+<!-- Referral: List of options, but you can pick more than one [None, Friend, Instructor, Online] -->
+<!-- Comments: Large text area -->
